@@ -138,7 +138,7 @@ require 'koneksi.php';
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">LOGIN SEBAGAI ADMIN ATAU 👋</h4>
+              <h4 class="mb-2">LOGIN</h4>
               <?php
                         if( isset($_POST['login'])) {
                             $username = $_POST['username'];
@@ -148,7 +148,7 @@ require 'koneksi.php';
                             $cek = mysqli_num_rows($data);
                             if($cek > 0) {
                                 $_SESSION['user'] = mysqli_fetch_array($data);
-                                echo '<script>alert("Selamat datang di Perpustakaan Digital!"); location.href="index.php";</script>';
+                                echo '<script>alert("SELAMAT DATANG DI APLIKASI PENGADUAN MASYARAKAT"); location.href="index.php";</script>';
                             } else {
                                 echo '<script>alert("username/password tidak sesuai")</script>';
                             }
