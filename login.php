@@ -138,7 +138,7 @@ require 'koneksi.php';
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">LOGIN SEBAGAI ADMIN ATAU PETUGAS👋</h4>
+              <h4 class="mb-2">LOGIN SEBAGAI ADMIN ATAU 👋</h4>
               <?php
                         if( isset($_POST['login'])) {
                             $username = $_POST['username'];
